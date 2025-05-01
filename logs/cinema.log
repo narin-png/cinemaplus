@@ -1,0 +1,36 @@
+2025-04-23T21:42:33.022+04:00  INFO 20052 --- [cinemaplus] [main] a.c.cinemaplus.CinemaplusApplication     : Starting CinemaplusApplication using Java 22.0.2 with PID 20052 (C:\Users\user\Downloads\cinemaplus\cinemaplus\target\classes started by user in C:\Users\user\Downloads\cinemaplus\cinemaplus)
+2025-04-23T21:42:33.026+04:00  INFO 20052 --- [cinemaplus] [main] a.c.cinemaplus.CinemaplusApplication     : The following 3 profiles are active: "db", "security", "logging"
+2025-04-23T21:42:34.641+04:00  INFO 20052 --- [cinemaplus] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-23T21:42:34.801+04:00  INFO 20052 --- [cinemaplus] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 5 JPA repository interfaces.
+2025-04-23T21:42:36.041+04:00  INFO 20052 --- [cinemaplus] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-23T21:42:36.082+04:00  INFO 20052 --- [cinemaplus] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-23T21:42:36.082+04:00  INFO 20052 --- [cinemaplus] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-23T21:42:36.201+04:00  INFO 20052 --- [cinemaplus] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-23T21:42:36.201+04:00  INFO 20052 --- [cinemaplus] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3087 ms
+2025-04-23T21:42:36.611+04:00  INFO 20052 --- [cinemaplus] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-23T21:42:36.722+04:00  INFO 20052 --- [cinemaplus] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-23T21:42:36.810+04:00  INFO 20052 --- [cinemaplus] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-23T21:42:37.581+04:00  INFO 20052 --- [cinemaplus] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-23T21:42:37.681+04:00  INFO 20052 --- [cinemaplus] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-23T21:42:38.165+04:00  INFO 20052 --- [cinemaplus] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72237be8
+2025-04-23T21:42:38.165+04:00  INFO 20052 --- [cinemaplus] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-23T21:42:38.351+04:00  INFO 20052 --- [cinemaplus] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-04-23T21:42:41.066+04:00  INFO 20052 --- [cinemaplus] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-23T21:42:43.137+04:00  INFO 20052 --- [cinemaplus] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T21:42:44.016+04:00  INFO 20052 --- [cinemaplus] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userServiceImpl
+2025-04-23T21:42:44.299+04:00  WARN 20052 --- [cinemaplus] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-23T21:42:44.911+04:00  INFO 20052 --- [cinemaplus] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-04-23T21:42:45.598+04:00  INFO 20052 --- [cinemaplus] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-23T21:42:45.614+04:00  INFO 20052 --- [cinemaplus] [main] a.c.cinemaplus.CinemaplusApplication     : Started CinemaplusApplication in 13.596 seconds (process running for 15.519)
+2025-04-23T21:53:45.310+04:00  INFO 20052 --- [cinemaplus] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-23T21:53:45.322+04:00  INFO 20052 --- [cinemaplus] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-23T21:53:45.330+04:00  INFO 20052 --- [cinemaplus] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-23T21:53:45.335+04:00  INFO 20052 --- [cinemaplus] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-23T21:53:45.340+04:00  INFO 20052 --- [cinemaplus] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

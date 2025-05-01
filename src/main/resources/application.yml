@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: cinemaplus
+  profiles:
+    include:
+      - db
+      - security
+      - logging
+      - file
