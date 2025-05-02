@@ -39,9 +39,9 @@ SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
             .csrf(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(auth ->
                     auth
-//                            .requestMatchers("/auth/**", "/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
-//                            .requestMatchers("/admin/**").hasRole("ADMIN")
-                            .anyRequest().permitAll()
+                            .requestMatchers("/auth/**", "/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
+                            .requestMatchers("/admin/**").hasRole("ADMIN")
+                            .anyRequest().authenticated()
             ).formLogin(AbstractHttpConfigurer::disable)
             //formLogin(Customizer.withDefaults())
             .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
