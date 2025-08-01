@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("admin/cinemas")
-public class CinemaController {
+public class  CinemaController {
     private final CinemaService cinemaService;
     @GetMapping
     public ResponseEntity<List<CinemaDto>> getCinemas() {
